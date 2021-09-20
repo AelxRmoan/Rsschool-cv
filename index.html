@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Cv</title>
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/all.min.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+</head>
+  
+<body>
+
+<!-- HEADER -->
+
+	<header> 
+		<button class="burger_button fas fa-bars" ></button>
+		<nav class="navigation_bar">	
+			<ul class="navigation_bar-ul">
+				<li class="navigation_bar-li"><a href="#about_me" class="navigation_bar-a a-neutral"> About me</a></li>
+				<li class="navigation_bar-li"><a href="#skills" class="navigation_bar-a a-neutral"> Skills</a></li>
+				<li class="navigation_bar-li"><a href="#code_example" class="navigation_bar-a a-neutral"> Code Example</a></li>
+				<li class="navigation_bar-li"><a href="#education" class="navigation_bar-a a-neutral"> Education</a></li>
+			</ul>
+		</nav>
+	</header>
+
+<!-- MAIN -->
+
+	<main>
+
+		<section class="contacts" id="contacts">
+			<h1 class="CV">rsschool-cv</h1>
+			<h2> Oleksii Romanovskyi</h2>
+			<Ul class="contacts_list">
+				<li class="contacts_list-li"><b>Location:</b> Chernihiv or Kyiv, Ukraine</li>
+				<li class="contacts_list-li"><b>Cell Number:</b> +38 093 748 33 06<br></li>				
+				<li class="contacts_list-li"><b>Mail:</b> AlexRoman1818@gmail.com</li>
+			</Ul>
+			<figure class="ME">
+				<img src="./assets/images/86895159.png" alt="avatar" style="width: 250px; height: 250px;">
+				<figcaption class="Me-figcaption">My github alter ego(suits to the design)</figcaption>
+			</figure>
+		</section>
+
+
+		<section class="about_me" id="about_me">
+			<h3>About me</h3>
+			<p>For a long time I have been engaged in corporate translation: consecutive interpretation, document translation and dealing with business correspondence.</p>
+			<p> Now I actively study the code. I would be glad to work in a team, but can also work independently. I enjoy creating or implementing aesthetically pleasing and laconic projects. (draft)</p>
+			<iframe width="480" height="270" src="https://www.youtube.com/embed/jKDATxHvtXg" title="YouTube video player" style="border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-cv"></iframe>		</section>
+
+
+		<section class="skills" id="skills">
+			<h3>Skills</h3>
+			<ul>
+				<li>Html/CSS</li>
+				<li>Js</li>
+				<li>English Proficiency: C1 (I have practiced the language abroad: Canada, the UK, all over the Europe and Japan)</li>
+			</ul>
+		</section>
+
+
+		<section class="code_example" id="code_example">
+			<h3>Code Example</h3>	
+			<pre>
+				<code class="js">  
+const reverse = (stri) => {
+
+	const str = stri.toString();
+	let result = '';
+
+	if (str[0] === '-'){ for (let i = 1; i &lt; str.length; i += 3){
+		const third = str[i + 2]  || ''
+		const second = str[i + 1] || '';
+		const first = str[i]; 
+		result = `${third}${second}${first}${result}`;
+		}}
+
+	else {for (let i = 0; i &lt; str.length; i += 3){
+	const third = str[i + 2]  || ''
+	const second = str[i + 1] || '';
+	const first = str[i]; 
+		result = `${third}${second}${first}${result}`;
+	}}
+
+		//Result = Number(result)
+
+	return result
+}
+				</code>			
+			</pre>
+			<ol class="projects_list-li">
+				<li class="projects_list-li"><a href="https://vibrant-swanson-a7fd67.netlify.app/" target="_blank" class="projects_list-a a-neutral"><img src="./assets/images/Logo.svg" alt="i don't need it"> Museum(not completed): Louvre web-site(pure html, css)</a></li>
+				<li class="projects_list-li"><a href="https://angry-thompson-e263e5.netlify.app/" target="_blank" class="projects_list-a a-neutral"><img src="./assets/images/UP-arrow.svg" width="20" alt="i don't need it"> Vertical slider: slider(Vertical) (pure html, css, js)</a></li>
+				<li class="projects_list-li"><a href="" target="_blank" class="projects_list-a a-neutral">Momentum(in developing): wait for update</a></li>
+			</ol>
+		</section>
+
+
+		<section class="education" id="education">
+			<h3>Education</h3>
+			<ul>
+				<li>University: Kyiv National Linguistic University, Faculty of Oriental Studies, Interpreter of Japanese Language</li>
+				<li>Courses: 
+					<ul>
+						<li>Html Academy</li>
+						<li>Javascript.ru </li>
+					</ul>
+				</li>    
+			</ul>
+		</section>
+
+	</main>
+
+<!-- FOOTER -->
+
+	<footer>
+        <a href="https://github.com/AelxRmoan" target="_blank"><img src="./assets/images/github.svg" alt="My_github-link" style=" width: 30px; height: 30px;"> </a>
+        <p>2021</p>
+        <a href="https://rs.school/js/" target="_blank"><img src="./assets/images/rs_school_js.svg" alt="rsschool-link" style=" width: 80px; height: 30px;"> </a>
+	</footer>
+
+	<script src="./scripts/burger.js"></script>
+	<script>hljs.highlightAll();</script>
+</body>
+</html>
